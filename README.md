@@ -6,3 +6,7 @@ cd into the directory where the new clean-code drirectory shoul be created under
 __*git clone https://github.com/al2108/clean-code.git*__
 
 __*cd clean-code*__
+
+after some changes:
+
+__*git push*__
