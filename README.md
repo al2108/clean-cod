@@ -10,7 +10,11 @@ cd into the directory where the new clean-code drirectory shoul be created under
 *svn update trunk*
 
 Updating 'trunk':
+
 A    trunk
+
 A    trunk/.gitignore
+
 A    trunk/README.md
+
 Updated to revision 4.
