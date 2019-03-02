@@ -3,10 +3,6 @@
 # Checkout with SVN
 cd into the directory where the new clean-code drirectory shoul be created underneath
 
-*mkdir clean-code*
-
-*cd clean-code*
-
 *git clone https://github.com/al2108/clean-code.git*
 
 Cloning into 'clean-code'...
@@ -21,3 +17,4 @@ remote: Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
 
 Unpacking objects: 100% (19/19), done.
 
+*cd clean-code*
