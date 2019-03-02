@@ -6,7 +6,6 @@ cd into the directory where the new clean-code drirectory shoul be created under
 *git clone https://github.com/al2108/clean-code.git*
 
 Cloning into 'clean-code'...
-
 remote: Enumerating objects: 19, done.
 
 remote: Counting objects: 100% (19/19), done.
