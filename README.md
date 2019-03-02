@@ -3,18 +3,21 @@
 # Checkout with SVN
 cd into the directory where the new clean-code drirectory shoul be created underneath
 
-*svn co --depth empty https://github.com/al2108/clean-code*
+*mkdir clean-code*
 
 *cd clean-code*
 
-*svn update trunk*
+*git clone https://github.com/al2108/clean-code.git*
 
-Updating 'trunk':
+Cloning into 'clean-code'...
 
-A    trunk
+remote: Enumerating objects: 19, done.
 
-A    trunk/.gitignore
+remote: Counting objects: 100% (19/19), done.
 
-A    trunk/README.md
+remote: Compressing objects: 100% (17/17), done.
 
-Updated to revision 4.
+remote: Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
+
+Unpacking objects: 100% (19/19), done.
+
