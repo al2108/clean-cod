@@ -1,15 +1,11 @@
 # Clean Code Examples
 
-# Checkout with SVN
-cd into the directory where the new clean-code drirectory shoul be created underneath
-
-__*git clone https://github.com/al2108/clean-code.git*__
-
-__*cd clean-code*__
-
-after some changes:
-
-__*git push*__
+# Use with IntelliJ IDEA
+- Start IntelliJ IDEA
+- Select "Checkout from version control"
+- Select "Git"
+- Enter https://github.com/al2108/clean-code.git as url
+- Select "Clone"
 
 
 
