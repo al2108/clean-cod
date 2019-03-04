@@ -1,4 +1,4 @@
-package example;
+package solution.order;
 
 public class Order {
   public int id;

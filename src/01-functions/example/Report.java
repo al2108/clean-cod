@@ -2,6 +2,7 @@ package example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Report {
   private CustomerDatabase db1;
@@ -17,6 +18,8 @@ public class Report {
     List<Order> orders = db2.getOrders();
     List<OrderLine> olines = db2.getOrderLines();
     List<String> lines = new ArrayList<>();
+
+    lines.add("Report for all Orders");
     for (int i = 0; i < orders.size(); i++) {
       Order order = orders.get(i);
       List<OrderLine> olines2 = new ArrayList<>();
@@ -38,6 +41,8 @@ public class Report {
         lines.add(olines2.get(l).position + " - " + olines2.get(l).part + " - " + olines2.get(l).value);
       }
     }
+    lines.add("Report created by ReportMonster");
+
     return lines;
   }
 
@@ -45,6 +50,6 @@ public class Report {
     Report report;
 
     report = new Report();
-    System.out.println(report.createReport());
+    System.out.println(report.createReport().stream().collect(Collectors.joining("\n")));
   }
 }

@@ -1,4 +1,4 @@
-package example;
+package solution.customer;
 
 public class Customer {
   public int id;

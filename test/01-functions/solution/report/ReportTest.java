@@ -1,4 +1,4 @@
-package example;
+package solution.report;
 
 import org.junit.jupiter.api.Test;
 
