@@ -24,7 +24,7 @@ public class Report {
   }
 
   public List<String> createReport() {
-    readReportBaseData();
+    readReportData();
     initializeReportWithHeader();
     for (Order order : orders) {
       addOrderHeaderToReport(order);
@@ -66,10 +66,10 @@ public class Report {
     reportLines.add("Report created by ReportMonster");
   }
 
-  private void readReportBaseData() {
+  private void readReportData() {
     customers = customerDatabase.getCustomers();
     orders = orderDatabase.getOrders();
-    orderLines  = orderDatabase.getOrderLines();
+    orderLines = orderDatabase.getOrderLines();
   }
 
   private void setupDatabase() {

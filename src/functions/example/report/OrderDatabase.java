@@ -19,7 +19,7 @@ public class OrderDatabase {
     orderLines.add(new OrderLine(2, 1, "Part-1", 100.11));
     orderLines.add(new OrderLine(3, 1, "Part-2", 200.22));
   }
-  
+
   public List<Order> getOrders() {
     return orders;
   }
