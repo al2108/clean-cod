@@ -3,11 +3,11 @@ package example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderDataBase {
+public class OrderDatabase {
   private ArrayList<Order> orders;
   private ArrayList<OrderLine> orderLines;
 
-  public OrderDataBase() {
+  public OrderDatabase() {
     orders = new ArrayList<>();
     orders.add(new Order(1, 1));
     orders.add(new Order(2, 1));
