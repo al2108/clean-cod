@@ -1,13 +1,14 @@
-package solution.report;
+package functions.solution.report;
 
-import solution.customer.Customer;
-import solution.customer.CustomerDatabase;
-import solution.order.Order;
-import solution.order.OrderDatabase;
-import solution.order.OrderLine;
+import functions.solution.customer.Customer;
+import functions.solution.customer.CustomerDatabase;
+import functions.solution.order.Order;
+import functions.solution.order.OrderDatabase;
+import functions.solution.order.OrderLine;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Report {
@@ -20,17 +21,23 @@ public class Report {
 
   public Report() {
     setupDatabase();
-    readReportBaseData();
   }
 
   public List<String> createReport() {
+    readReportBaseData();
     initializeReportWithHeader();
     for (Order order : orders) {
       addOrderHeaderToReport(order);
       addOrderLinesToReport(order);
     }
     addFooterToReport();
+
     return reportLines;
+  }
+
+  private void initializeReportWithHeader() {
+    reportLines = new ArrayList<>();
+    reportLines.add("Report for all Orders");
   }
 
   private void addOrderHeaderToReport(final Order parOrder) {
@@ -48,15 +55,11 @@ public class Report {
   }
 
   private String getCustomerName(int parCustomerId) {
-    Customer customerFound;
+    Optional<Customer> customerFound;
 
-    customerFound = customers.stream().filter(customer -> customer.id == parCustomerId).findFirst().get();
-    return customerFound  == null ? "" : customerFound.name;
-  }
+    customerFound = customers.stream().filter(customer -> customer.id == parCustomerId).findFirst();
 
-  private void initializeReportWithHeader() {
-    reportLines = new ArrayList<>();
-    reportLines.add("Report for all Orders");
+    return customerFound.isPresent() ? customerFound.get().name : "";
   }
 
   private void addFooterToReport() {
@@ -74,10 +77,4 @@ public class Report {
     orderDatabase = new OrderDatabase();
   }
 
-  public static void main(final String[] parArgs) {
-    Report report;
-
-    report = new Report();
-    System.out.println(report.createReport().stream().collect(Collectors.joining("\n")));
-  }
 }

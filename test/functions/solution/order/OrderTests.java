@@ -1,6 +1,5 @@
-package solution.order;
+package functions.solution.order;
 
-import example.OrderDatabase;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

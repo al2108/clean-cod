@@ -1,4 +1,4 @@
-package solution.customer;
+package functions.solution.customer;
 
 public class Customer {
   public int id;

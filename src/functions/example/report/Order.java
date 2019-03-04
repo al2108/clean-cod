@@ -1,4 +1,4 @@
-package solution.order;
+package functions.example.report;
 
 public class Order {
   public int id;

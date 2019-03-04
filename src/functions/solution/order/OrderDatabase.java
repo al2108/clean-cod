@@ -1,4 +1,4 @@
-package solution.order;
+package functions.solution.order;
 
 import java.util.ArrayList;
 import java.util.List;

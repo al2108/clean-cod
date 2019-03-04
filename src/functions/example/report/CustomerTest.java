@@ -1,4 +1,4 @@
-package example;
+package functions.example.report;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

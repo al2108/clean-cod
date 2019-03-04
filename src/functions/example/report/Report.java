@@ -1,8 +1,7 @@
-package example;
+package functions.example.report;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Report {
   private CustomerDatabase db1;
@@ -44,12 +43,5 @@ public class Report {
     lines.add("Report created by ReportMonster");
 
     return lines;
-  }
-
-  public static void main(final String[] parArgs) {
-    Report report;
-
-    report = new Report();
-    System.out.println(report.createReport().stream().collect(Collectors.joining("\n")));
   }
 }

@@ -1,4 +1,4 @@
-package example;
+package functions.example.report;
 
 public class Customer {
   public int id;

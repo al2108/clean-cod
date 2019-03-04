@@ -1,4 +1,4 @@
-package example;
+package functions.solution.customer;
 
 import java.util.ArrayList;
 import java.util.List;

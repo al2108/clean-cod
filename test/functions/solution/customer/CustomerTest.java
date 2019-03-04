@@ -1,6 +1,5 @@
-package solution.customer;
+package functions.solution.customer;
 
-import example.CustomerDatabase;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package example;
+package functions.example.report;
 
 public class OrderLine {
   public int orderId;
